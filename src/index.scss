@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Generals
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --prime: #43aefc;
+  --light: #c8c8c8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-left {
+  @extend .flex;
+  justify-content: flex-start;
+}
+
+.f-center {
+  @extend .flex;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.g-center {
+  @extend .grid;
+  place-content: center;
+}
+
+.col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+// paddings
+
+.p-2 {
+  padding: 2rem;
+}
+
+// padding-block
+.pb-1 {
+  padding-block: 1rem;
+}
+
+// padding-inline
+.pi-2 {
+  padding-inline: 2rem;
+}
+
+// Body
+
+.btn,
+.link,
+a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  background: unset;
+  border: none;
+}
+
+.btn {
+  font-size: 1rem;
+  color: var(--light);
+  padding-block: 0.7rem;
+  border-radius: 4px;
+  border: 1px solid var(--light);
+}
+
+.btn-fill {
+  @extend .btn;
+  background-color: var(--prime);
+  color: white;
+  border: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+small {
+  font-size: 0.8rem;
+}
